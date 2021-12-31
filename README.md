@@ -56,3 +56,4 @@ to be used for development.
 ## License
 
 GPL-2.0 or later
+# typo3-project3
