@@ -57,3 +57,4 @@ to be used for development.
 
 GPL-2.0 or later
 # typo3-project3
+# typo3-project3
