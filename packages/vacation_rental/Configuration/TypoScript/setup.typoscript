@@ -1,0 +1,66 @@
+######################
+#### DEPENDENCIES ####
+######################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/setup.typoscript">
+
+
+##############
+#### PAGE ####
+##############
+page {
+    includeCSS {
+    ### theme = EXT:vacation_rental/Resources/Public/Scss/Theme/theme.scss
+        fontawesome = EXT:vacation_rental/Resources/Public/Css/fontawesome/css/all.css
+        animate = EXT:vacation_rental/Resources/Public/Css/animate.css
+        owlCarousel = EXT:vacation_rental/Resources/Public/Css/owl.carousel.min.css
+        owlTheme = EXT:vacation_rental/Resources/Public/Css/owl.theme.default.min.css
+        magnificPopup = EXT:vacation_rental/Resources/Public/Css/magnific-popup.css
+        bootstrapDatepicker = EXT:vacation_rental/Resources/Public/Css/bootstrap-datepicker.css
+        jqueryTimepicker = EXT:vacation_rental/Resources/Public/Css/jquery.timepicker.css
+        flaticon = EXT:vacation_rental/Resources/Public/Css/flaticon.css
+        style = EXT:vacation_rental/Resources/Public/Css/style.css
+        styles = EXT:vacation_rental/Resources/Public/Css/styles.css
+        jqueryUI = EXT:vacation_rental/Resources/Public/JavaScript/jquery-ui-1.13.0.custom/jquery-ui.css
+    }
+
+    includeJSLibs {
+        
+    }
+
+    includeJS {
+        ## bookWidget = https://media.xmlcal.com/widget/1.00/js/bookWidget.min.js
+        ## bookWidget.external = 1
+        ## widgetBox = EXT:vacation_rental/Resources/Public/JavaScript/jqueryBookWidget/widgetBox.js
+        ## widgetStreifen = EXT:vacation_rental/Resources/Public/JavaScript/jqueryBookWidget/widgetStreifen.js
+
+
+
+    }
+
+    includeJSFooterlibs {
+        jqueryUI = EXT:vacation_rental/Resources/Public/JavaScript/jquery-ui-1.13.0.custom
+    }
+
+    includeJSFooter {
+        vacation_rental_scripts = EXT:vacation_rental/Resources/Public/JavaScript/Dist/scripts.js
+        jquery = EXT:vacation_rental/Resources/Public/JavaScript/jquery.min.js
+        jqueryMigrate = EXT:vacation_rental/Resources/Public/JavaScript/jquery-migrate-3.0.1.min.js
+        popper = EXT:vacation_rental/Resources/Public/JavaScript/popper.min.js
+        bootstrap = EXT:vacation_rental/Resources/Public/JavaScript/bootstrap.min.js
+        jqueryEasing = EXT:vacation_rental/Resources/Public/JavaScript/jquery.easing.1.3.js
+        jqueryWaypoints = EXT:vacation_rental/Resources/Public/JavaScript/jquery.waypoints.min.js
+        jqueryStellar = EXT:vacation_rental/Resources/Public/JavaScript/jquery.stellar.min.js 
+        jqueryAnimate = EXT:vacation_rental/Resources/Public/JavaScript/jquery.animateNumber.min.js
+        bootstrapDatepicker = EXT:vacation_rental/Resources/Public/JavaScript/bootstrap-datepicker.js
+        jqueryTimepicker = EXT:vacation_rental/Resources/Public/JavaScript/jquery.timepicker.min.js
+        owlCarousel = EXT:vacation_rental/Resources/Public/JavaScript/owl.carousel.min.js
+        jqueryMagnific = EXT:vacation_rental/Resources/Public/JavaScript/jquery.magnific-popup.min.js
+        scrollax = EXT:vacation_rental/Resources/Public/JavaScript/scrollax.min.js
+        gmaps = https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false
+        gmaps.external = 1
+        googleMap = EXT:vacation_rental/Resources/Public/JavaScript/google-map.js
+        main = EXT:vacation_rental/Resources/Public/JavaScript/main.js
+        jqueryUIjs =EXT:vacation_rental/Resources/Public/JavaScript/jquery-ui-1.13.0.custom/jquery-ui.js
+        jqueryUIjsmin = EXT:vacation_rental/Resources/Public/JavaScript/jquery-ui-1.13.0.custom/jquery-ui.min.js
+    }
+}

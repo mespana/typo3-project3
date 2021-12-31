@@ -1,0 +1,66 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+<f:section name="Border">
+    <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '3', slide: '{theme.pagelayout.{pagelayout}.colPos.3.slide}'}" />
+    <div class="overlay"></div>
+        <section class="ftco-intro" style="background-image: url( );" data-stellar-background-ratio="0.5">
+    
+        </section>
+
+</f:section>
+
+
+
+<f:section name="Main">
+
+  <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '8', slide: '{theme.pagelayout.{pagelayout}.colPos.8.slide}'}" />
+
+
+  
+
+    <div class="section section-default ftco-animate">
+      
+        <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '0', slide: '{theme.pagelayout.{pagelayout}.colPos.0.slide}'}" />
+    </div>    
+   
+
+    
+  <div class="container ftco-animate">
+    <div class="section-row">
+        <div class="section-column section-column-third">
+            <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '30', slide: '{theme.pagelayout.{pagelayout}.colPos.30.slide}'}" />
+        </div>
+        <div class="section-column section-column-third">
+            <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '31', slide: '{theme.pagelayout.{pagelayout}.colPos.31.slide}'}" />
+        </div>
+        <div class="section-column section-column-third">
+            <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '32', slide: '{theme.pagelayout.{pagelayout}.colPos.32.slide}'}" />
+        </div>
+    </div>
+  </div>
+  
+  <section class="ftco-section bg-light">
+   
+    <div class="container ftco-animate">
+        <div class="row no-gutters">
+          <div class="section-column section-column-half">
+              <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '33', slide: '{theme.pagelayout.{pagelayout}.colPos.33.slide}'}" />
+          </div>
+          <div class="section-column section-column-half">
+              <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '34', slide: '{theme.pagelayout.{pagelayout}.colPos.34.slide}'}" />
+          </div>
+        </div>
+    </div>
+</section>
+
+
+      <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '9', slide: '{theme.pagelayout.{pagelayout}.colPos.9.slide}'}" />
+
+</f:section>
+
+<f:section name="Footer">
+    <f:render partial="Structure/FooterContent" arguments="{_all}" />
+</f:section>
+
+</html>

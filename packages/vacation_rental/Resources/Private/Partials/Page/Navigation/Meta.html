@@ -1,0 +1,11 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:if condition="{metanavigation}">
+    
+        <f:for each="{metanavigation}" as="item" iteration="metaiteration">
+            
+                <a class="mr-md-3" href="{item.link}"{f:if(condition: item.target, then: ' target="{item.target}"')} title="{item.title}">
+                    <span>{item.title}</span>
+                </a>
+        </f:for>
+</f:if>
+</html>

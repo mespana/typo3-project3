@@ -1,0 +1,30 @@
+######################
+#### DEPENDENCIES ####
+######################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/setup.typoscript">
+
+
+##############
+#### PAGE ####
+##############
+page {
+    includeCSS {
+        theme = EXT:vacation_rental/Resources/Public/Scss/Theme/theme.scss
+    }
+
+    includeJSLibs {
+
+    }
+
+    includeJS {
+
+    }
+
+    includeJSFooterlibs {
+
+    }
+
+    includeJSFooter {
+        vacation_rental_scripts = EXT:vacation_rental/Resources/Public/JavaScript/Dist/scripts.js
+    }
+}

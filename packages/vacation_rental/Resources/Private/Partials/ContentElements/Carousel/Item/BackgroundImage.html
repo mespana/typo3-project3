@@ -1,0 +1,135 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:link.typolink parameter="{item.data.link}" additionalAttributes="{draggable:'false'}"> </f:link.typolink>
+<section class="ftco-section ftco-book ftco-no-pt ftco-no-pb">
+    <div class="container">
+      <div class="row justify-content-end">
+        <div class="col-lg-4">
+          <FORM METHOD="POST" ACTION="https://beds24.com/booking.php" class="appointment-form">
+          <!--<form action="#" class="appointment-form">-->
+            <h3 class="mb-3">Book your apartment</h3>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Full Name">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <div class="input-wrap">
+                    <i class="glyphicon glyphicon-calendar"><span class="ion-md-calendar"></span></i>
+                    <input type="text" class="form-control appointment_date-check-in" placeholder="Check-In">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <div class="input-wrap">
+                    <div class="icon"><span class="ion-md-calendar"></span></div>
+                    <input type="text" class="form-control appointment_date-check-out" placeholder="Check-Out">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <div class="form-field">
+                    <div class="select-wrap">
+                      <div class="icon"><span class="fa fa-chevron-down"></span></div>
+                      <select name="maxAdult" id="maxAdult" class="form-control">
+                        <option value="">Adults</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <div class="form-field">
+                    <div class="select-wrap">
+                      <div class="icon"><span class="fa fa-chevron-down"></span></div>
+                      <select name="numchild" id="" class="form-control">
+                        <option value="">Children</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Phone number">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <div class="input-wrap">
+                    <div class="icon"><span class="ion-ios-clock"></span></div>
+                    <input type="text" class="form-control appointment_time" placeholder="Time">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div id='bookWidget-74561-134591-0-1631982774'>
+                <div class="form-group">
+                  <input type="hidden" name="propid" value="134591">
+                  <input type="submit" value="Book Appartment Now" class="btn btn-primary py-3 px-4">
+                </div>
+              </div>
+            </div>
+          <!--</form>-->
+          </FORM>
+        </div>
+      </div>
+    </div>
+  
+      <div id='bookWidget-74561-134591-0-1631982774'>
+        <FORM METHOD="POST" ACTION="https://beds24.com/booking.php">
+          <input type="hidden" name="propid" value="134591">
+          <input type="submit" value="Book Now">
+        </FORM>
+      </div>
+  
+      <div id='bookWidget-74561-134591-0-1633385762'> </div>
+      <script>
+  jQuery(document).ready(function() {
+      jQuery('#bookWidget-74561-134591-0-1633385762').bookWidget({
+          propid:134591,
+          dateFormat:'dd.mm.yy',
+          dateSelection:3,
+          defaultNightsAdvance:0,
+          defaultNumAdult:1,
+          defaultNumNight:1,
+          formAction:'https://beds24.com/booking.php',
+          formTarget:'bookingWindow',
+          maxAdult:8,
+          maxChild:5,
+          peopleSelection:2,
+          searchLinkText:'booking test',
+          weekFirstDay:0,
+          widgetLang:'de',
+          widgetType:'BookingBox'
+      });
+  });
+  </script>
+  
+        <script>
+        jQuery(document).ready(function() {
+             jQuery('#bookWidget-74561-134591-0-1633104679').bookWidget({
+                   propid:134591,
+                     formAction:'https://beds24.com/booking.php',
+                       widgetLang:'de',
+                         widgetType:'BookingBox'
+                      });
+                  });
+        </script>
+  </section>
+  
+</html>

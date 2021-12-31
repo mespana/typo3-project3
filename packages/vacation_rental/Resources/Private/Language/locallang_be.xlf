@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2021-12-04UTC21:19:000">
+        <header>
+            <authorName>Mariana España</authorName>
+            <authorEmail>marianaespana@yahoo.es</authorEmail>
+        </header>
+        <body>
+            <trans-unit id="backend_layout.example">
+                <source>Example</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.vacation_rental">
+                <source>Vacation Rental</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.apartments">
+                <source>Apartments</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.contact">
+                <source>Contact</source>
+            </trans-unit>
+
+            <trans-unit id="backend_layout.column.border">
+                <source>Border</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.normal">
+                <source>Normal</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.contentbefore">
+                <source>Before Content</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.contentafter">
+                <source>After Content</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.special1">
+                <source>Special 1</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.special2">
+                <source>Special 2</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.special3">
+                <source>Special 3</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.special4">
+                <source>Special 4</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.special5">
+                <source>Special 5</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.special6">
+                <source>Special 6</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.special7">
+                <source>Special 7</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.special8">
+                <source>Special 8</source>
+            </trans-unit>
+             <trans-unit id="backend_layout.column.special9">
+                <source>Special 9</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.footer1">
+                <source>Footer: Left</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.footer2">
+                <source>Footer: Center 1</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.footer3">
+                <source>Footer: Center 2</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.footer4">
+                <source>Footer: Right</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
