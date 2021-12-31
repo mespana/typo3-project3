@@ -19,7 +19,7 @@
 		"sort-packages": true
 	},
 	"require": {
-		"gowords/vacation-rental": "@dev",
+		
 		"helhum/typo3-console": "^7.0.2",
 		"typo3/cms-backend": "^11.5.0",
 		"typo3/cms-belog": "^11.5.0",
@@ -53,8 +53,5 @@
 		"post-autoload-dump": [
 			"@typo3-cms-scripts"
 		]
-	},
-	"require-dev": {
-		"deployer/deployer": "^6.8"
 	}
 }
