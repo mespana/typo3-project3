@@ -1,7 +1,8 @@
 {
     "name": "gowords/vacation-rental",
-    "type": "typo3-cms-extension",
+    "version": "1.0.0",
     "description": "Sitepackage Perkeo Apartments",
+    "keywords": ["TYPO3 CMS", "extension"],
     "homepage": "https://marianaespana.com",
     "author": [
         {"name": "Mariana Espana-Rivera",
@@ -9,7 +10,7 @@
         }
     ],
     "license": ["GPL-2.0-or-later"],
-    "keywords": ["TYPO3 CMS"],
+    "type": "typo3-cms-extension",
     "require": {
         "bk2k/bootstrap-package": "^12.0"
     },
@@ -25,6 +26,6 @@
     },
     "replace": {
         "gowords/vacation-rental": "self.version",
-        "typo3-ter/vacation-rental": "self.verion"
+        "typo3-ter/vacation-rental": "self.version"
     }
 }
