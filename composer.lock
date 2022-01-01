@@ -960,7 +960,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/vacation_rental",
-                "reference": "24e2a9160153f92d47e243d6a8c9bef7fde031b2"
+                "reference": "b4dfe2b774ea12868c33e3bf3b4ad6257247286c"
             },
             "require": {
                 "bk2k/bootstrap-package": "^12.0"
@@ -984,7 +984,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Sitepackage Perkeo Apartments",
-            "homepage": "https://marianaespana.com",
+            "homepage": "https://www.marianaespana.com",
             "keywords": [
                 "TYPO3 CMS",
                 "extension"
