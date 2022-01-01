@@ -18,6 +18,6 @@
         widgetLang:'de',
         widgetType:'BookingStrip',
         width:'auto'
-      });
+      })
     });
-    </script>
+  </script>

@@ -18,7 +18,7 @@
                         <f:if condition="{item.data.background_color}"><f:variable name="itemStyle">{itemStyle} --carousel-item-background: {item.data.background_color};</f:variable></f:if>
                         <f:if condition="{item.data.text_color}"><f:variable name="itemStyle">{itemStyle} --carousel-item-color: {item.data.text_color};</f:variable></f:if>
                     </f:if>
-                    <div class="{itemClass}" data-itemno="{iteration.index}" style="{itemStyle}">
+                    <div class="{itemClass}" data-itemno="{iteration.index}" >
                         <f:render partial="Carousel/General/BackgroundImage" arguments="{_all}" />
                         <div class="carousel-content">
                             <f:render partial="Carousel/Item/{item.data.item_type -> bk2k:format.upperCamelCase()}" arguments="{_all}" />
