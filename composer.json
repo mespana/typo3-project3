@@ -19,7 +19,7 @@
 		"sort-packages": true
 	},
 	"require": {
-		"gowords/vacation-rental": "^1.0",
+		
 		"typo3/cms-backend": "^11.5.0",
 		"typo3/cms-belog": "^11.5.0",
 		"typo3/cms-beuser": "^11.5.0",
