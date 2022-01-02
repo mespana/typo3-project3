@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b39af415a12b69029ed32415824bd8d6",
+    "content-hash": "cd35e20abfc86886155e621470917e32",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -58,115 +58,6 @@
                 "source": "https://github.com/Bacon/BaconQrCode/tree/2.0.4"
             },
             "time": "2021-06-18T13:26:35+00:00"
-        },
-        {
-            "name": "bk2k/bootstrap-package",
-            "version": "12.0.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/benjaminkott/bootstrap_package.git",
-                "reference": "622f623aa994efc4b9971459d9edead2ca9a92c4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/benjaminkott/bootstrap_package/zipball/622f623aa994efc4b9971459d9edead2ca9a92c4",
-                "reference": "622f623aa994efc4b9971459d9edead2ca9a92c4",
-                "shasum": ""
-            },
-            "require": {
-                "ext-dom": "*",
-                "ext-filter": "*",
-                "ext-hash": "*",
-                "ext-json": "*",
-                "ext-libxml": "*",
-                "ext-pdo": "*",
-                "ext-simplexml": "*",
-                "php": ">=7.2.0",
-                "scssphp/scssphp": "^1.7.0",
-                "typo3/cms-backend": "^10.4 || ^11.5 || 11.*.*@dev",
-                "typo3/cms-core": "^10.4 || ^11.5 || 11.*.*@dev",
-                "typo3/cms-extbase": "^10.4 || ^11.5 || 11.*.*@dev",
-                "typo3/cms-extensionmanager": "^10.4 || ^11.5 || 11.*.*@dev",
-                "typo3/cms-fluid": "^10.4 || ^11.5 || 11.*.*@dev",
-                "typo3/cms-frontend": "^10.4 || ^11.5 || 11.*.*@dev",
-                "typo3/cms-install": "^10.4 || ^11.5 || 11.*.*@dev",
-                "typo3/cms-rte-ckeditor": "^10.4 || ^11.5 || 11.*.*@dev",
-                "typo3/cms-seo": "^10.4 || ^11.5 || 11.*.*@dev",
-                "typo3fluid/fluid": "^2.5.2"
-            },
-            "require-dev": {
-                "b13/container": "^1.3",
-                "bk2k/demo-package": "@dev",
-                "bk2k/extension-helper": "^1.0",
-                "friendsofphp/php-cs-fixer": "^3.0.0",
-                "friendsoftypo3/phpstan-typo3": "^0.8.1",
-                "overtrue/phplint": "^2.3.5",
-                "phpstan/phpstan": "^0.12.87",
-                "phpstan/phpstan-deprecation-rules": "^0.12.6",
-                "phpstan/phpstan-phpunit": "^0.12.19",
-                "phpstan/phpstan-strict-rules": "^0.12.9",
-                "typo3/cms-belog": "^10.4 || ^11.5 || 11.*.*@dev",
-                "typo3/cms-felogin": "^10.4 || ^11.5 || 11.*.*@dev",
-                "typo3/cms-filelist": "^10.4 || ^11.5 || 11.*.*@dev",
-                "typo3/cms-form": "^10.4 || ^11.5 || 11.*.*@dev",
-                "typo3/cms-indexed-search": "^10.4 || ^11.5 || 11.*.*@dev",
-                "typo3/cms-info": "^10.4 || ^11.5 || 11.*.*@dev",
-                "typo3/cms-lowlevel": "^10.4 || ^11.5 || 11.*.*@dev",
-                "typo3/cms-tstemplate": "^10.4 || ^11.5 || 11.*.*@dev",
-                "typo3/cms-workspaces": "^10.4 || ^11.5 || 11.*.*@dev",
-                "typo3/testing-framework": "^5.0 || ^6.4"
-            },
-            "type": "typo3-cms-extension",
-            "extra": {
-                "typo3/cms": {
-                    "extension-key": "bootstrap_package",
-                    "web-dir": ".build/web",
-                    "app-dir": ".build"
-                },
-                "branch-alias": {
-                    "dev-BP_12-0": "12.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "BK2K\\BootstrapPackage\\": "Classes"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Benjamin Kott",
-                    "email": "info@bk2k.info",
-                    "homepage": "http://www.bk2k.info/",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Bootstrap Package delivers a full configured frontend theme for TYPO3, based on the Bootstrap CSS Framework.",
-            "homepage": "https://github.com/benjaminkott/bootstrap_package",
-            "keywords": [
-                "TYPO3 CMS",
-                "bootstrap",
-                "frontend",
-                "introduction",
-                "responsive",
-                "sitepackage",
-                "theme",
-                "web"
-            ],
-            "support": {
-                "issues": "https://github.com/benjaminkott/bootstrap_package/issues",
-                "source": "https://github.com/benjaminkott/bootstrap_package/tree/12.0.4"
-            },
-            "funding": [
-                {
-                    "url": "https://www.paypal.me/benjaminkott",
-                    "type": "custom"
-                }
-            ],
-            "time": "2021-11-19T12:35:43+00:00"
         },
         {
             "name": "christian-riesen/base32",
@@ -953,45 +844,6 @@
                 "source": "https://github.com/darylldoyle/svg-sanitizer/tree/0.14.1"
             },
             "time": "2021-08-09T23:46:54+00:00"
-        },
-        {
-            "name": "gowords/vacation-rental",
-            "version": "1.0.0",
-            "dist": {
-                "type": "path",
-                "url": "packages/vacation_rental",
-                "reference": "6672ca8009f03a13289c1e5ed3f09a13532fcb4d"
-            },
-            "require": {
-                "bk2k/bootstrap-package": "^12.0"
-            },
-            "replace": {
-                "gowords/vacationrental": "self.version",
-                "typo3-ter/vacationrental": "self.version"
-            },
-            "type": "typo3-cms-extension",
-            "extra": {
-                "typo3/cms": {
-                    "extension-key": "vacation_rental"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Gowords\\VacationRental\\": "Classes/"
-                }
-            },
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "description": "Sitepackage Perkeo Apartments",
-            "homepage": "https://www.marianaespana.com",
-            "keywords": [
-                "TYPO3 CMS",
-                "extension"
-            ],
-            "transport-options": {
-                "relative": true
-            }
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -2180,80 +2032,6 @@
                 "source": "https://github.com/ralouphie/getallheaders/tree/develop"
             },
             "time": "2019-03-08T08:55:37+00:00"
-        },
-        {
-            "name": "scssphp/scssphp",
-            "version": "v1.9.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/scssphp/scssphp.git",
-                "reference": "bc8bece4e5e176973a832f3763049ddbba16e6fd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/scssphp/scssphp/zipball/bc8bece4e5e176973a832f3763049ddbba16e6fd",
-                "reference": "bc8bece4e5e176973a832f3763049ddbba16e6fd",
-                "shasum": ""
-            },
-            "require": {
-                "ext-ctype": "*",
-                "ext-json": "*",
-                "php": ">=5.6.0"
-            },
-            "require-dev": {
-                "bamarni/composer-bin-plugin": "^1.4",
-                "phpunit/phpunit": "^5.7 || ^6.5 || ^7.5 || ^8.3 || ^9.4",
-                "sass/sass-spec": "*",
-                "squizlabs/php_codesniffer": "~3.5",
-                "symfony/phpunit-bridge": "^5.1",
-                "thoughtbot/bourbon": "^7.0",
-                "twbs/bootstrap": "~5.0",
-                "twbs/bootstrap4": "4.6.0",
-                "zurb/foundation": "~6.5"
-            },
-            "suggest": {
-                "ext-iconv": "Can be used as fallback when ext-mbstring is not available",
-                "ext-mbstring": "For best performance, mbstring should be installed as it is faster than ext-iconv"
-            },
-            "bin": [
-                "bin/pscss"
-            ],
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "ScssPhp\\ScssPhp\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Anthon Pang",
-                    "email": "apang@softwaredevelopment.ca",
-                    "homepage": "https://github.com/robocoder"
-                },
-                {
-                    "name": "Cédric Morin",
-                    "email": "cedric@yterium.com",
-                    "homepage": "https://github.com/Cerdic"
-                }
-            ],
-            "description": "scssphp is a compiler for SCSS written in PHP.",
-            "homepage": "http://scssphp.github.io/scssphp/",
-            "keywords": [
-                "css",
-                "less",
-                "sass",
-                "scss",
-                "stylesheet"
-            ],
-            "support": {
-                "issues": "https://github.com/scssphp/scssphp/issues",
-                "source": "https://github.com/scssphp/scssphp/tree/v1.9.0"
-            },
-            "time": "2021-12-13T11:55:16+00:00"
         },
         {
             "name": "symfony/cache",
