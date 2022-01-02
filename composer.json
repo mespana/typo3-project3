@@ -14,12 +14,14 @@
 	"license": "GPL-2.0-or-later",
 	"config": {
 		"platform": {
-			"php": "7.4"
+			"php": "7.4.1"
 		},
 		"sort-packages": true
 	},
 	"require": {
-		
+		"php": ">=7.4.0",
+		"gowords/vacation-rental": "@dev",
+		"helhum/typo3-console": "^7.0",
 		"typo3/cms-backend": "^11.5.0",
 		"typo3/cms-belog": "^11.5.0",
 		"typo3/cms-beuser": "^11.5.0",
@@ -47,8 +49,7 @@
 	},
 	"scripts":{
 		"typo3-cms-scripts": [
-				"typo3cms install:fixfolderstructure",
-				"typo3cms install:generatepackagestates"
+				"typo3cms install:fixfolderstructure"
 		],
 		"post-autoload-dump": [
 				"@typo3-cms-scripts"

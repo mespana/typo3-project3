@@ -1,5 +1,6 @@
 {
     "name": "gowords/vacation-rental",
+    "gowords/vacation-rental": "^1.0",
     "type": "typo3-cms-extension",
     "description": "Sitepackage Perkeo Apartments",
     "homepage": "https://www.marianaespana.com",
