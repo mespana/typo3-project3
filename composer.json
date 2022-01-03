@@ -14,7 +14,7 @@
 	"license": "GPL-2.0-or-later",
 	"config": {
 		"platform": {
-			"php": "7.2"
+			"php": "7.4"
 		},
 		"allow-plugins": {
 			"third-party/required-plugin": true,
