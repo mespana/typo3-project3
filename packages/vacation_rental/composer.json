@@ -17,7 +17,12 @@
     },
     "autoload": {
         "psr-4": {
-            "gowords\\VacationRental\\": "Classes"
+            "Gowords\\VacationRental\\": "Classes/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Gowords\\VacationRental\\Tests\\": "Tests"
         }
     },
     "extra": {
@@ -26,7 +31,6 @@
         }
     },
     "replace": {
-        "gowords/VacationRental": "self.version",
-        "typo3-ter/VacationRental": "self.version"
+        "gowords/vacation-rental": "self.version"
     }
 }
