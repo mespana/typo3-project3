@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5d9201de988374a7752f001d9ff9e7de",
+    "content-hash": "17a5e57d4e69bb845cce0be7887dc109",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -956,18 +956,18 @@
         },
         {
             "name": "gowords/vacation-rental",
-            "version": "dev-main",
+            "version": "1.0.0",
             "dist": {
                 "type": "path",
                 "url": "packages/vacation_rental",
-                "reference": "0628ff3a87afd7cc63e20603b0e554a02e6be71a"
+                "reference": "92104f8e9acefd8c5b87880d5494e9ee2322a78f"
             },
             "require": {
-                "bk2k/bootstrap-package": "^12.0"
+                "bk2k/bootstrap-package": "^12.0",
+                "typo3/cms-core": "^11.0"
             },
             "replace": {
-                "gowords/vacationrental": "self.version",
-                "typo3-ter/vacationrental": "self.version"
+                "typo3-ter/vacation-rental": "self.version"
             },
             "type": "typo3-cms-extension",
             "extra": {
@@ -977,18 +977,18 @@
             },
             "autoload": {
                 "psr-4": {
-                    "gowords\\VacationRental\\": "Classes"
+                    "Gowords\\VacationRental\\": "Classes/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Gowords\\VacationRental\\Tests\\": "Tests"
                 }
             },
             "license": [
                 "GPL-2.0-or-later"
             ],
             "description": "Sitepackage Perkeo Apartments",
-            "homepage": "https://www.marianaespana.com",
-            "keywords": [
-                "TYPO3 CMS",
-                "extension"
-            ],
             "transport-options": {
                 "relative": true
             }
@@ -7169,9 +7169,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "gowords/vacation-rental": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
