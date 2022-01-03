@@ -16,6 +16,11 @@
 		"platform": {
 			"php": "7.4.1"
 		},
+		"allow-plugins": {
+			"third-party/required-plugin": true,
+			"my-organization/*": true,
+			"unnecessary/plugin": false
+		},
 		"sort-packages": true
 	},
 	"require": {
