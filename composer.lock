@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "17a5e57d4e69bb845cce0be7887dc109",
+    "content-hash": "fed7d68609fa6a3ed0b0cd9cc3572783",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -273,6 +273,77 @@
                 "source": "https://github.com/DASPRiD/Enum/tree/1.0.3"
             },
             "time": "2020-10-02T16:03:48+00:00"
+        },
+        {
+            "name": "dmind/cookieman",
+            "version": "2.9.13",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dmind-gmbh/extension-cookieman.git",
+                "reference": "63baf403ee558eb958e7687d0af8a753108c9aec"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dmind-gmbh/extension-cookieman/zipball/63baf403ee558eb958e7687d0af8a753108c9aec",
+                "reference": "63baf403ee558eb958e7687d0af8a753108c9aec",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4 || ^8.0",
+                "typo3/cms-core": "^11.5 || 11.*.x-dev || dev-master"
+            },
+            "replace": {
+                "typo3-ter/cookieman": "self.version"
+            },
+            "require-dev": {
+                "browserstack/browserstack-local": "dev-master",
+                "codeception/codeception": "^4.1",
+                "codeception/module-asserts": "^1.3",
+                "codeception/module-webdriver": "^1.1",
+                "dmind/cookieman-test": "@dev",
+                "dmind/cookieman-test-bootstrap5-modal": "@dev",
+                "friendsofphp/php-cs-fixer": "^3.2",
+                "helhum/typo3-console": "^7.0 || 7.x-dev || dev-latest",
+                "php-coveralls/php-coveralls": "^2.1",
+                "phpspec/prophecy-phpunit": "^2.0",
+                "roave/security-advisories": "dev-master",
+                "typo3/cms-install": "^11.5 || 11.*.x-dev || dev-master",
+                "typo3/cms-tstemplate": "^11.5 || 11.*.x-dev || dev-master",
+                "typo3/tailor": "^1.3",
+                "typo3/testing-framework": "dev-master"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.9.x-dev"
+                },
+                "typo3/cms": {
+                    "extension-key": "cookieman",
+                    "web-dir": ".build/public",
+                    "app-dir": ".build"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Dmind\\Cookieman\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jonas Eberle",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Provides a user consent popup. It asks for approval to include tracking objects (cookies, images or any HTML) and includes the objects when consented. It also removes cookies after the consent has been revoked.",
+            "support": {
+                "issues": "https://github.com/dmind-gmbh/extension-cookieman/issues",
+                "source": "https://github.com/dmind-gmbh/extension-cookieman"
+            },
+            "time": "2021-10-21T10:11:52+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -960,7 +1031,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/vacation_rental",
-                "reference": "92104f8e9acefd8c5b87880d5494e9ee2322a78f"
+                "reference": "ba4b3513f7835a2dc5cb76fc5d99eb8e4e2d0625"
             },
             "require": {
                 "bk2k/bootstrap-package": "^12.0",
@@ -972,7 +1043,9 @@
             "type": "typo3-cms-extension",
             "extra": {
                 "typo3/cms": {
-                    "extension-key": "vacation_rental"
+                    "extension-key": "vacation_rental",
+                    "web-dir": ".build/web",
+                    "app-dir": ".build"
                 }
             },
             "autoload": {
@@ -7172,9 +7245,7 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": {
-        "php": ">=7.4.0"
-    },
+    "platform": [],
     "platform-dev": [],
     "platform-overrides": {
         "php": "7.4.1"
