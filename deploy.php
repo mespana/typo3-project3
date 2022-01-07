@@ -18,10 +18,8 @@ set('writable_mode', 'chmod');
 set('use_relative_symlink', '0');
 
 
-// Hosts
-
-host('u107000322@access896577624.webspace-data.io')
-    ->set('deploy_path', '~/perkeoapartments/');
+// Set Server
+inventory('.hosts.yml');
 
 //DocumentRoot / WebRoot for the TYPO3 automaticInstallation
 set('typo3_webroot', 'public');
