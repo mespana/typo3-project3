@@ -4,7 +4,7 @@ namespace Deployer;
 require 'recipe/typo3.php';
 
 // Project name
-set('application', 'typo3-project4');
+set('application', 'typo3-project3');
 
 // Project repository
 set('repository', 'https://github.com/mespana/typo3-project3.git');
