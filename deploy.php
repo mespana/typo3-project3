@@ -7,7 +7,7 @@ require 'recipe/typo3.php';
 set('application', 'typo3-project3');
 
 // Project repository
-set('repository', 'https://github.com/mespana/typo3-project3.git');
+set('repository', 'https://github.com/mespana/template_VacationRental_T3v10');
 
 // [Optional] Allocate tty for git clone. Default value is false.
 set('git_tty', true);
