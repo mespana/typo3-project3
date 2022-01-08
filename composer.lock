@@ -876,11 +876,11 @@
             "dist": {
                 "type": "path",
                 "url": "packages/vacation_rental",
-                "reference": "d67ed4861932cb0a095189eccd25899435730434"
+                "reference": "7f8e8d5cd366354fa3865285148c646c5d26aac0"
             },
             "require": {
                 "bk2k/bootstrap-package": "^12.0",
-                "typo3/cms-core": "^10.0"
+                "typo3/cms-core": "^10.4 || ^11.0"
             },
             "replace": {
                 "typo3-ter/vacation-rental": "self.version"
