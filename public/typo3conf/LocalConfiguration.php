@@ -4,6 +4,7 @@ return [
         'debug' => false,
         'explicitADmode' => 'explicitAllow',
         'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=1$MFlrOVhHeDBaNHEyYVZqNQ$G9Gjttnf5QZj5LXbG2k1U3pJ6umnBB3bNRlp9o8jyIw',
+        'loginSecurityLevel' => 'normal',
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
             'options' => [],
@@ -27,11 +28,11 @@ return [
     'EXTENSIONS' => [
         'backend' => [
             'backendFavicon' => '',
-            'backendLogo' => '',
-            'loginBackgroundImage' => '',
+            'backendLogo' => 'EXT:bootstrap_package/Resources/Public/Images/Backend/backend-logo.svg',
+            'loginBackgroundImage' => 'EXT:bootstrap_package/Resources/Public/Images/Backend/login-background-image.jpg',
             'loginFootnote' => '',
             'loginHighlightColor' => '',
-            'loginLogo' => '',
+            'loginLogo' => 'EXT:bootstrap_package/Resources/Public/Images/Backend/login-logo.svg',
             'loginLogoAlt' => '',
         ],
         'bootstrap_package' => [
