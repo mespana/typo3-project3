@@ -7,10 +7,10 @@ require 'recipe/typo3.php';
 set('application', 'typo3-project3');
 
 // Project repository
-set('repository', 'https://github.com/mespana/template_VacationRental_T3v10');
+set('repository', 'https://github.com/mespana/typo3-project3');
 
 // [Optional] Allocate tty for git clone. Default value is false.
-set('git_tty', true);
+set('git_tty', false);
 
 // To solve this issue: Cant't detect http user name. Please set up the 'http_user' config parameter.
 set('http_user', 'www-data');
