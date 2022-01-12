@@ -14,7 +14,7 @@
 	"license": "GPL-2.0-or-later",
 	"config": {
 		"platform": {
-			"php": "7.4"
+			"php": "7.4.1"
 		},
 		"allow-plugins": {
 			"third-party/required-plugin": true,
@@ -26,6 +26,7 @@
 	"require": {
 		"dmind/cookieman": "^2.9",
 		"gowords/vacation-rental": "^1.0",
+		"helhum/typo3-console": "^7",
 		"typo3/cms-backend": "^11.5.0",
 		"typo3/cms-belog": "^11.5.0",
 		"typo3/cms-beuser": "^11.5.0",
