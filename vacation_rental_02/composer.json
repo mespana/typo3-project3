@@ -1,0 +1,23 @@
+{
+    "name": "gowords/vacation-rental",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "homepage": "https://www.marianaespana.com",
+    "license": ["GPL-2.0-or-later"],
+    "keywords": ["TYPO3 CMS"],
+    "require": {
+        "typo3/cms-core": "^11.5",
+        "typo3/cms-rte-ckeditor": "^11.5",
+        "typo3/cms-fluid-styled-content": "^11.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gowords\\VacationRental\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "vacation_rental"
+        }
+    }
+}

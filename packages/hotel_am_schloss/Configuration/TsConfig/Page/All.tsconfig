@@ -1,0 +1,7 @@
+#
+# PageTS for Hotel am Schloss
+#
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:hotel_am_schloss/Configuration/TsConfig/Page/RTE.tsconfig">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:hotel_am_schloss/Configuration/TsConfig/Page/TCEFORM.tsconfig">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:hotel_am_schloss/Configuration/TsConfig/Page/TCEMAIN.tsconfig">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:hotel_am_schloss/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts.tsconfig">

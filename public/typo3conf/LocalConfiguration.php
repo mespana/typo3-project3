@@ -19,9 +19,7 @@ return [
     ],
     'EXTCONF' => [
         'lang' => [
-            'availableLanguages' => [
-                'de',
-            ],
+            'availableLanguages' => [],
         ],
     ],
     'EXTENSIONS' => [
@@ -47,6 +45,21 @@ return [
         'extensionmanager' => [
             'automaticInstallation' => '1',
             'offlineMode' => '0',
+        ],
+        'nnhelpers' => [
+            'clearAllCaches' => '0',
+            'deeplApiKey' => '',
+            'deeplApiUrl' => 'https://api-free.deepl.com/v2/translate',
+            'devModeEnabled' => '0',
+            'googleGeoApiKey' => '',
+            'saltingKey' => 'WyJcL2VKbHRJVFl2dHcrQWl4UFpHbGY4QXdQZHIxWis3elRmaWd6ZVRPb2NuMD0iLCI5bFdZTGFMXC9TUGJhbENhaVhOelZ6SHBkVzhIaVRCb01QUW9PUVJmSFVoQXBPTEt1K2VjcE81TlYwN1hWRVI5OUIzWHRGTk1TOHBQY1hnckh1R1A4dWc9PSJd',
+            'showMod' => '1',
+        ],
+        'nnrestapi' => [
+            'apiKeys' => 'examplefeUserName:exampleApiKey',
+            'disableDefaultEndpoints' => '0',
+            'disablePreCheck' => '0',
+            'maxSessionLifetime' => '3600',
         ],
     ],
     'FE' => [

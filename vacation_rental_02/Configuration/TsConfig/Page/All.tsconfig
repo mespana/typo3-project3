@@ -1,0 +1,7 @@
+#
+# PageTS for vacation-rental
+#
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:vacation_rental/Configuration/TsConfig/Page/RTE.tsconfig">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:vacation_rental/Configuration/TsConfig/Page/TCEFORM.tsconfig">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:vacation_rental/Configuration/TsConfig/Page/TCEMAIN.tsconfig">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:vacation_rental/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts.tsconfig">

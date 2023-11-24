@@ -10,7 +10,7 @@ set('application', 'typo3-project3');
 set('repository', 'https://github.com/mespana/typo3-project3.git');
 
 // [Optional] Allocate tty for git clone. Default value is false.
-set('git_tty', true);
+set('git_tty', false);
 
 // To solve this issue: Cant't detect http user name. Please set up the 'http_user' config parameter.
 set('http_user', 'www-data');
@@ -26,18 +26,36 @@ host('ftp109730-2622751@marianaespana.com')
 //DocumentRoot / WebRoot for the TYPO3 automaticInstallation
 set('typo3_webroot', 'public');
 
+
+/**
+ * Main TYPO3 task  
+ */
+desc('Deploys your project');
+task('deploy', [
+    'deploy:prepare',
+    'deploy:vendors',
+    'deploy:publish',
+]);
+
+/**
+ * Shared directories
+ */
 set('shared_dirs', [
   '{{typo3_webroot}}/fileadmin',
   '{{typo3_webroot}}/typo3temp',
   '{{typo3_webroot}}/uploads'
 ]);
 
-// Shared files/dirs between deploys
+/**
+ * Shared files
+ */
 set('shared_files', [
   '{{typo3_webroot}}/.htaccess'
 ]);
 
-// Writable dirs by web server
+/** 
+ * Writable dirs by web server
+ */ 
 set('writable_dirs', [
   'config',
   'var',
@@ -47,23 +65,25 @@ set('writable_dirs', [
   '{{typo3_webroot}}/uploads'
 ]);
 
-
 // Tasks
-
-task('deploy', [
+desc('Prepares a new release');
+task('deploy:prepare', [
     'deploy:info',
-    'deploy:prepare',
+    'deploy:setup',
     'deploy:lock',
     'deploy:release',
     'deploy:update_code',
     'deploy:shared',
-    'deploy:vendors',
     'deploy:writable',
+]);
+
+desc('Publishes the release');
+task('deploy:publish', [
     'deploy:symlink',
     'deploy:unlock',
-    'cleanup',
-])->desc('Deploy your project');
-after('deploy', 'success');
+    'deploy:cleanup',
+    'deploy:success',
+]); 
 
-// [Optional] if deploy fails automatically unlock.
+// Hooks
 after('deploy:failed', 'deploy:unlock');

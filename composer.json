@@ -19,14 +19,19 @@
 		"allow-plugins": {
 			"third-party/required-plugin": true,
 			"my-organization/*": true,
-			"unnecessary/plugin": false
+			"unnecessary/plugin": false,
+			"typo3/class-alias-loader": true,
+			"typo3/cms-composer-installers": true
 		},
 		"sort-packages": true
 	},
 	"require": {
+		"ddoronenko/google-reviews": "^2.0",
 		"dmind/cookieman": "^2.9",
+		"gowords/hotel-am-schloss": "@dev",
 		"gowords/vacation-rental": "^1.0",
 		"helhum/typo3-console": "^7",
+		"nng/nnrestapi": "^1.4",
 		"typo3/cms-backend": "^11.5.0",
 		"typo3/cms-belog": "^11.5.0",
 		"typo3/cms-beuser": "^11.5.0",

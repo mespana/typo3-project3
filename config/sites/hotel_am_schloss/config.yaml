@@ -1,0 +1,47 @@
+base: /
+languages:
+  - title: Deutsch
+    enabled: true
+    base: /
+    typo3Language: de
+    locale: de_DE.utf8
+    iso-639-1: de
+    websiteTitle: ''
+    navigationTitle: German
+    hreflang: de-De
+    direction: ltr
+    flag: de
+    languageId: 0
+  - title: English
+    enabled: true
+    base: /en/
+    typo3Language: default
+    locale: en_US.utf8
+    iso-639-1: en
+    websiteTitle: ''
+    navigationTitle: English
+    hreflang: ''
+    direction: ''
+    fallbackType: fallback
+    fallbacks: '0'
+    flag: us
+    languageId: 1
+  - title: Español
+    enabled: true
+    base: /es/
+    typo3Language: es
+    locale: es_ES.utf8
+    iso-639-1: es
+    websiteTitle: ''
+    navigationTitle: Español
+    hreflang: es-ES
+    direction: ''
+    fallbackType: fallback
+    fallbacks: '0'
+    flag: es
+    languageId: 2
+rootPageId: 13
+websiteTitle: ''
+
+imports:
+  - { resource: 'EXT:nnrestapi/Configuration/Yaml/default.yaml' }

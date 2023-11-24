@@ -1,6 +1,6 @@
-<script>
+
     jQuery(document).ready(function() {
-        jQuery('#bookWidget-74561-134591-0-1633385762').bookWidget({
+        jQuery('#bookWidget-74561-134591-0-1639495697').bookWidget({
             propid:134591,
             dateFormat:'dd.mm.yy',
             dateSelection:3,
@@ -18,4 +18,3 @@
             widgetType:'BookingBox'
         })
     });
-</script>

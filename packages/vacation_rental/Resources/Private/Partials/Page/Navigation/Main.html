@@ -4,25 +4,7 @@
 <f:variable name="headerClass">{headerClass}{f:if(condition: logo.normal, then:' navbar-has-image')}</f:variable>
 <f:variable name="headerClass">{headerClass}{f:if(condition: theme.navigation.type, else:' navbar-top', then:' navbar-{theme.navigation.type} navbar-fixed-{theme.navigation.type}')}</f:variable>
 <header id="page-header" class="{headerClass}">
-    <div class="wrap">
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col d-flex align-items-center">
-                    <p class="mb-0 phone"><span class="mailus">Phone no:</span> <a href="#">+49(0)6221-14130</a> or <span class="mailus">email us:</span> <a href="mailto:kontakt@perkeo-apartments.de">kontakt@perkeo-apartments.de</a>
-                </div> 
-                <div class="col d-flex justify-content-end">
-                    <div class="social-media">
-                    <p class="mb-0 d-flex">
-                        <a href="#" class="d-flex align-items-center justify-content-center"><span class="fab fa-facebook"><i class="sr-only">Facebook</i></span></a>
-                        <a href="#" class="d-flex align-items-center justify-content-center"><span class="fab fa-twitter"><i class="sr-only">Twitter</i></span></a>
-                        <a href="#" class="d-flex align-items-center justify-content-center"><span class="fab fa-instagram"><i class="sr-only">Instagram</i></span></a>
-                        <a href="#" class="d-flex align-items-center justify-content-center"><span class="fab fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
-                    </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </div>
+    
     <div class="container">
         <f:link.page pageUid="{rootPage}" class="navbar-brand navbar-brand-{f:if(condition: logo.normal, then: 'image', else: 'text')}" title="{settings.logo.linktitle}">
             <f:if condition="{logo.normal}">
@@ -40,10 +22,11 @@
         <f:link.page pageUid="{rootPage}"> <a class="navbar-brand">Perkeo<span>Apartments</span> in Heidelberg</a>
         </f:link.page>
         <f:if condition="{mainnavigation}">
-            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#mainnavigation" data-bs-target="#mainnavigation" aria-controls="mainnavigation" aria-expanded="false" aria-label="{f:translate(key: 'togglenavigation', extensionName: 'bootstrap_package')}">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainnavigation" data-bs-target="#mainnavigation" aria-controls="mainnavigation" aria-expanded="true" aria-label="{f:translate(key: 'togglenavigation', extensionName: 'bootstrap_package')}">
+                <span class="fa fa-bars"></span>
             </button>
-            <nav id="mainnavigation" class="collapse navbar-collapse">
+            <!--<nav id="mainnavigation" class="collapse navbar-collapse"></nav>-->
+            <nav id="mainnavigation" class="collapse navbar-collapse show" id="ftco-nav" style>
                 <f:render partial="DropIn/Navigation/MainBefore" arguments="{_all}" />
                 <f:render section="MainNavigation" arguments="{menu: mainnavigation, theme: theme}" />
                 <f:render partial="DropIn/Navigation/MainAfter" arguments="{_all}" />
@@ -54,16 +37,14 @@
 
 <f:section name="MainNavigation">
     <f:if condition="{menu}">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav ml-auto">
             <f:for each="{menu}" as="item">
                 <f:if condition="{item.spacer}">
                     <f:then>
-                        </ul>
-                        <ul class="navbar-nav">
                     </f:then>
                     <f:else>
-                        <li class="nav-item{f:if(condition: item.active, then:' active')}{f:if(condition: item.children, then:' dropdown dropdown-hover')}">
-                            <a href="{item.link}" id="nav-item-{item.data.uid}" class="nav-link{f:if(condition: item.children, then:' dropdown-toggle')}"{f:if(condition: item.target, then: ' target="{item.target}"')} title="{item.title}"{f:if(condition: item.children, then:' aria-haspopup="true" aria-expanded="false"')}>
+                        <li class="nav-item{f:if(condition: item.active, then:' active')}{f:if(condition: item.children, then:' dropdown ')}">
+                            <a href="{item.link}" id="nav-item-{item.data.uid}" class="nav-link{f:if(condition: item.children, then:' dropdown-toggle')}"{f:if(condition: item.target, then: ' target="{item.target}"')} title="{item.title}"{f:if(condition: item.children, then:' aria-haspopup="false" aria-expanded="false"')}>
                                 <f:if condition="{theme.navigation.icon.enable} && {item.icon}">
                                     <span class="nav-link-icon">
                                         <bk2k:icon icon="{item.icon}" width="{theme.navigation.icon.width}" height="{theme.navigation.icon.height}" />
@@ -72,30 +53,31 @@
                                 <span class="nav-link-text">{item.title}<f:if condition="{item.current}"> <span class="visually-hidden">(current)</span></f:if></span>
                             </a>
                             <f:if condition="{item.children}">
-                                <ul class="dropdown-menu" aria-labelledby="nav-item-{item.data.uid}">
+                                    <div class="dropdown-menu" aria-labelledby="nav-item-{item.data.uid}">    
+                                    
                                     <f:for each="{item.children}" as="child">
                                         <f:if condition="{child.spacer}">
                                             <f:then>
                                                 <li class="dropdown-divider"></li>
                                             </f:then>
                                             <f:else>
-                                                <li>
                                                     <a href="{child.link}" class="dropdown-item{f:if(condition: child.active, then:' active')}"{f:if(condition: child.target, then: ' target="{child.target}"')} title="{child.title}">
+                                                        
                                                         <f:if condition="{theme.navigation.dropdown.icon.enable} && {child.icon}">
-                                                            <span class="dropdown-icon">
+                                                            <!--<span class="dropdown-icon">
                                                                 <bk2k:icon icon="{child.icon}" width="{theme.navigation.dropdown.icon.width}" height="{theme.navigation.dropdown.icon.height}" />
-                                                            </span>
+                                                            </span>-->
                                                         </f:if>
-                                                        <span class="dropdown-text">{child.title}<f:if condition="{child.current}"> <span class="visually-hidden">(current)</span></f:if></span>
+                                                        <span class="dropdown-text">{child.title}<f:if condition="{child.current}"> <span class="visually-hidden">(current)</span></f:if></span>  
                                                     </a>
-                                                </li>
                                             </f:else>
                                         </f:if>
                                     </f:for>
-                                </ul>
+                                </div>
                             </f:if>
                         </li>
                     </f:else>
+                   </li>
                 </f:if>
             </f:for>
         </ul>

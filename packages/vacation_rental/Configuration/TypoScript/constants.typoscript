@@ -38,6 +38,19 @@ plugin.bootstrap_package {
     }
 }
 
+plugin.tx_nnrestapi {
+	view {
+		templateRootPaths {
+			0 = EXT:nnrestapi/Resources/Private/Templates/
+		}
+		partialRootPaths {
+			0 = EXT:nnrestapi/Resources/Private/Partials/
+		}
+		layoutRootPaths {
+			0 = EXT:nnrestapi/Resources/Private/Layouts/
+		}
+	}
+}
 
 ########################
 ### CONTENT ELEMENTS ###

@@ -1,21 +1,20 @@
 name: typo3-project3
 type: typo3
 docroot: public
-php_version: "7.4"
+php_version: '7.4'
 webserver_type: nginx-fpm
-router_http_port: "80"
-router_https_port: "443"
+router_http_port: '80'
+router_https_port: '443'
 xdebug_enabled: false
 additional_hostnames: []
 additional_fqdns: []
-mariadb_version: ""
-mysql_version: "5.7"
+mariadb_version: ''
+mysql_version: '5.7'
 nfs_mount_enabled: false
 mutagen_enabled: false
 use_dns_when_possible: true
-composer_version: "2"
+composer_version: '2'
 web_environment: []
-
 # Key features of ddev's config.yaml:
 
 # name: <projectname> # Name of the project, automatically provides

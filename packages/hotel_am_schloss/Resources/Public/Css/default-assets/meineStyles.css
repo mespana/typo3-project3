@@ -1,0 +1,42 @@
+.classy-nav-container a {
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  text-decoration: none;
+  outline: none;
+  font-size: 14px;
+  color: #232323;
+  display: inline-block; 
+  padding-left: 1.75em; }
+
+  /*.top-header-area {
+    height: 50px;
+  }
+
+  .top-header-area .top-header-content .top-social-area a {
+    color: #ffffff;
+    line-height: 15px;
+  }*/
+
+  .top-header-area .top-header-content .top-social-area.lang-menu a {
+    padding: 0 30px;
+    background-color: #1cc3b2;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    }
+
+.fi {
+  margin-left: 1.75em;
+}
+
+.fi-en {
+    background-image: url(../../../Public/flag-icon/flags/4x3/gb.svg)  }
+    
+.fi-en.fis {
+    background-image:url(/../../../Public/flag-icon/flags/1x1/gb.svg)  }
+.social-info {
+  margin-bottom: 0.5em;
+  
+}
