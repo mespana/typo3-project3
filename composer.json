@@ -17,13 +17,9 @@
 			"typo3/class-alias-loader": true,
 			"typo3/cms-composer-installers": true
 		},
-		"platform": {
-			"php": "8.1"
-		},
 		"sort-packages": true
 	},
 	"require": {
-		"php": ">=8.1",
 		"ddoronenko/google-reviews": "^2.0.0",
 		"dmind/cookieman": "^2.9",
 		"gowords/hotel-am-schloss": "@dev",
